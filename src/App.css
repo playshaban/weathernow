@@ -1,0 +1,159 @@
+:root 
+{
+  --blue : rgb(19,106,198);
+}
+
+.App 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(".//resources/skygb.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.Contents
+{
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  box-sizing: border-box;
+  align-items: center;
+}
+#Darktheme 
+{
+  background-color: rgba(0, 0, 0, 0.9);
+  
+}
+.Head 
+{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  color:white;
+  gap:10px;
+}
+.Head form 
+{
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  justify-content: space-between;
+}
+.Head input 
+{
+  font-size: 18px;
+  padding: 2px;
+  border-radius: 3px;
+  width: 80%;
+}
+.Head form button
+{
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 2px;
+}
+.Head form button:hover
+{
+  background-color: var(--blue);
+  color:white;
+
+}
+.Infoarea 
+{
+  position: relative;
+
+  flex-direction: column;
+  width: 700px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Infocard 
+{
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+#InfocardDark 
+{
+  background-color: rgb(36, 36, 36);
+  color:white;
+}
+.Infocard img , .Moreinfo img
+{
+  width: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+
+}
+.Infocard .Viewmore , .Infocard .Viewless
+{
+  width: 100%;
+  background-color: var(--blue);
+  padding: 2px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color:rgb(240,240,240);
+}
+.Moreinfo
+{
+  
+  justify-content: space-between;
+
+ 
+} 
+.Moreinfo table 
+{
+  text-align: left;
+  font-size: 20px;
+  width: 90%;
+
+  max-height: 200px;
+}
+
+footer{
+  width: 100%;
+  padding: 10px 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .Contents
+  {
+    height: 100%;
+  }
+  .Head 
+  {
+    width: 90%;
+    box-sizing: border-box;
+  }
+  .Infoarea
+  {
+    width: 100%;
+    box-sizing: border-box;
+  } 
+  
+}
