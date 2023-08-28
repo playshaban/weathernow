@@ -152,7 +152,7 @@ function App() {
       </div>
       <footer>
         Design & Developed By Shaban Khan
-        <span><a href="https://playshaban.github.io/profile/">Click Here</a>For Contacts</span>
+        <span><a href="https://playshaban.github.io/profile/" target="_blank" rel="noreferrer" >Click Here</a>For Contacts</span>
       </footer>
     </div>
   );
